@@ -5,41 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bryson OBS Truck Parts</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #222; color: #fff; padding: 20px; text-align: center; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-    .container { padding: 20px; }
-    .product { background: white; margin: 10px 0; padding: 15px; border-radius: 8px; }
-    footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+    header { background: #222; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5em; margin: 0; }
+    header p { margin: 10px 0 0; font-size: 1.2em; }
+    nav { margin-top: 15px; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .container { padding: 30px; max-width: 900px; margin: auto; }
+    h2 { color: #222; margin-bottom: 15px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .product { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .product h3 { margin: 0 0 10px; }
+    .product p { color: #555; }
+    footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 30px; }
+    footer a { color: #fff; text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <!-- Banner -->
   <header>
     <h1>Bryson OBS Truck Parts</h1>
+    <p>Your #1 source for Old Body Style truck parts</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <div class="container">
-    <h2>Welcome to Bryson's OBS Truck Parts Store</h2>
-    <p>Your one-stop shop for OBS (Old Body Style) truck parts and accessories.</p>
-
-    <div class="product">
-      <h3>OBS Headlights</h3>
-      <p>High-quality replacement headlights for OBS trucks.</p>
-    </div>
-
-    <div class="product">
-      <h3>OBS Bumpers</h3>
-      <p>Durable steel bumpers built to last.</p>
+  <!-- Products Section -->
+  <div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Engines</h3>
+        <p>Reliable OBS truck engines and engine parts.</p>
+      </div>
+      <div class="product">
+        <h3>Body Parts</h3>
+        <p>Fenders, bumpers, grills, and more.</p>
+      </div>
+      <div class="product">
+        <h3>Accessories</h3>
+        <p>Lights, mirrors, interior upgrades and extras.</p>
+      </div>
     </div>
   </div>
 
+  <!-- Contact Section -->
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <strong>(555) 123-4567</strong></p>
+    <p>📧 Email: <a href="mailto:info@brysonobsparts.com">info@brysonobsparts.com</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/15551234567" target="_blank">Chat with us</a></p>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Bryson OBS Truck Parts. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
